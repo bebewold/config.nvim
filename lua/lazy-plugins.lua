@@ -44,7 +44,7 @@ require('lazy').setup({
   require 'kickstart.plugins.neo-tree',
 
   -- [[ THEME ]]
-  --  require 'kickstart/plugins/tokyonight',
+  require 'kickstart/plugins/tokyonight',
   require 'custom.plugins.themes.sonokai',
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
