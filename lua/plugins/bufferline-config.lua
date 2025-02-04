@@ -1,6 +1,13 @@
-vim.opt.termguicolors = true
+return {
+  'akinsho/bufferline.nvim',
+  version = '*',
+  dependencies = 'nvim-tree/nvim-web-devicons',
+  config = function() end,
+}
 
-require('bufferline').setup {
+--vim.opt.termguicolors = true
+
+--[[ require('bufferline').setup {
   options = {
     hover = {
       enabled = true,
@@ -8,4 +15,4 @@ require('bufferline').setup {
       reveal = { 'close' },
     },
   },
-}
+} ]]
