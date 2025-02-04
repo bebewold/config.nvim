@@ -3,5 +3,5 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  require 'custom.plugins.bufferline-config',
+  require 'plugins.bufferline-config',
 }
