@@ -1,5 +1,13 @@
 -- pull cong on startup
-if not os.execute 'git -C ~/.config/nvim/ pull > /dev/null' then
+
+local config_path = ''
+if vim.loop.os_uname().sysname == 'Windows_NT' then
+  config_path = '~/AppData/Local/nvim/'
+else
+  config_path = '~/.config/nvim/'
+end
+
+if not (os.execute 'git -C ' .. config_path .. ' pull > /dev/null') then
   print 'Could not pull config...'
 end
 
