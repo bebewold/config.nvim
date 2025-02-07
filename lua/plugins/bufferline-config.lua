@@ -1,8 +1,15 @@
 return {
   'akinsho/bufferline.nvim',
+  enabled = false,
   version = '*',
   dependencies = 'nvim-tree/nvim-web-devicons',
-  config = function() end,
+  opts = {
+    hover = {
+      enabled = true,
+      delay = 150,
+      reveal = { 'close' },
+    },
+  },
 }
 
 --vim.opt.termguicolors = true
