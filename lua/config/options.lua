@@ -61,8 +61,11 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
 
+-- Show diagnostics ont the current line as virtual text
+vim.diagnostic.config { virtual_text = false, virtual_lines = { current_line = true } }
+
 -- [[ Shell ]]
 -- Windows shell
-if (vim.loop.os_uname().sysname == 'Windows_NT') then
+if vim.loop.os_uname().sysname == 'Windows_NT' then
   vim.o.shell = 'powershell.exe'
 end
